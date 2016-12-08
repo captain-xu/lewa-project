@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Geography</title>
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/widgetstyle.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/dateRange.css" />
+  <link rel="stylesheet" href="css/plugin.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/plugin.js"></script>
+	<script src="js/layout.js"></script>
+	<script src="js/dateRange.js"></script>
+</head>
+<body>
+<!-- header start -->
+	<header class="header">
+    <div class="logo icon-collections">
+      <span class="icon-reva"></span>
+    </div>
+    <div class="right-content">
+      <div class="nav">
+        <ul>
+          <li class="active"><a href="#" title="Report">REPORT</a></li>
+          <li><a href="#" title="Campaign">CAMPAIGN</a></li>
+          <li><a href="#" title="OS DIY">OS DIY</a></li>
+        </ul>
+      </div>
+      <div class="admin-container">
+        <div class="admin">
+          <a href="#" id="leftUserName">admin <span class="square"></span></a>
+        </div>
+        <div class="menu hide">
+          <p onclick=" Gohref('report/ChangePassword.jsp');"><a href="#" class="icon-collections icon-adminedit icon-link"></a>Change
+            Password</p>
+          <p onclick="logout();"><a href="#" class="icon-collections icon-logout icon-link"></a>Logout</p>
+        </div>
+      </div>
+      <!-- <div class="clock">
+        <a href="#" class="icon-collections icon-clock-off icon-link" title="clock-off"></a>
+      </div> -->
+    </div>
+  </header>
+<!-- header end -->
+<!-- aside start -->
+	<aside class="aside clear">
+		<div class="items">
+
+			<div class="os profiles-active">
+				<span>OS Profiles</span>
+			</div>
+
+			<div class="new">
+				<span>New user<a href="javascript:void(0)" class="icon-collections icon-more icon-link" ></a></span>
+				<ul class="list hide">
+					<li>Profiles</li>
+					<li>Areal distribution</li>
+					<li>Device Properties</li>
+					<li>network</li>
+					<li>Multidimensional analysis</li>
+				</ul>
+			</div>
+
+			<div class="all">
+				<span>New user<a href="javascript:void(0)" class="icon-collections icon-more icon-link" ></a></span>
+			</div>
+
+		</div>
+	</aside>
+<!-- aside end -->
+<!-- section start -->
+	<section class="section">
+		<div class="head-nav">
+      <span class="head-title">My Profile</span>
+			<div class="datarange">
+			    <div class="wrapper">
+			        <div class="ta_date" id="div_date1">
+			            <p>
+				            <span id="date1"></span>
+				            <span class="date_title" id="date_con"></span>
+				            <a class="opt_sel" id="input_trigger1" href="javascript:void(0)">
+				                <i class="i_orderd"></i>
+				            </a>
+			            </p>
+			            <ul class="custom_range">
+			                <li id='aRecent7Days'>Last 7 Days</li>
+			                <li id='aRecent30Days' class='range-act'>Last 30 Days</li>
+			                <li id='aRecent60Days'>Last 60 Days</li>
+			                <li id='custom_range'>Custom Range</li>
+			            </ul>
+			        </div>
+		        </div>
+			</div>
+			<div class="device-type">
+				<ul>
+					<li class="device-active" title=" model">机型</li>
+					<li title=" resolution">分辨率</li>
+					<li title="System version">系统版本</li>
+					<li title="CPU">CPU</li>
+					<li title="ROM memory">ROM内存</li>
+					<li title="RAM memory">RAM内存</li>
+				</ul>
+			</div>
+		</div><!-- 内容部分头部 -->
+		<div class="tableur">
+
+
+			<div class="data_trend">
+				<div class="direct">
+					<h3>Areal distribution</h3>
+					<div class="embed-box">
+						<ul>
+              <li class="embed teal" data-content="Pie chart" onclick="geography.changeMap(3)"><a
+                class="icon-collections icon-cake icon-link"
+                href="javascript:void(0)"></a></li>
+              <li class="embed teal" data-content="Trend" onclick="geography.changeMap(2)"><a
+                class="icon-collections icon-trend icon-link"
+                href="javascript:void(0)"></a></li>
+              <li class="embed teal" data-content="Bar chart" onclick="geography.changeMap(1)"><a
+                class="icon-collections icon-line icon-link"
+                href="javascript:void(0)"></a></li>
+              <li class="embed list_active teal" data-content="Map" onclick="geography.changeMap(0)"><a
+                class="icon-collections icon-position icon-link"
+                href="javascript:void(0)"></a></li>
+            </ul>
+					</div>
+				</div>
+				<div class="check">
+					<div class="btn-group">
+				        <button class="btn actived" title="New User">New User</button>
+				        <button class="btn" title="All User">All User</button>
+					</div>
+				</div>
+				<div class="map"></div>
+				<div class="detail">
+					<h3>Detail</h3>
+					<div class="detail-table"></div>
+				</div>
+				<!-- <div class="pagination-wrapper">
+					<div class="pagination">
+				        <a class="pagination-number pagination-actived" href="javascript:void(0)">10</a>
+				        <a class="pagination-number btn-middle" href="javascript:void(0)">50</a>
+				        <a class="pagination-number" href="javascript:void(0)">100</a>
+					</div>
+					<div class="pageturn">
+						<a href="javascript:void(0)" class="icon-collections icon-prePage page-arrow" title="previous page"></a>
+						<span>1-10</span>
+				        <a href="javascript:void(0)" class="icon-collections icon-nextPage page-arrow" title="next page"></a>
+					</div>
+				</div> -->
+			</div>
+
+		</div>
+   <!--  <div class="footer clear">
+      <a href="javascript:void(0)" class="link">About LeWa</a>
+      <p>LEWA Copyright &#169; 2016 All Rights Reserved</p>
+    </div> -->
+	</section>
+<!-- section end -->
+<script type="text/javascript">
+  $('.teal').popup({on: 'hover',
+    position : 'bottom left'});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/*icons start*/
+/*@font-face {font-family: "icon-collections";
+  src: url('../font/icon.eot');
+  src: url('../font/icon.eot') format('embedded-opentype'),
+  url('../font/icon.woff') format('woff'),
+  url('../font/icon.ttf') format('truetype'),
+  url('../font/icon.svg#iconfont') format('svg');
+}
+
+.icon-collections {
+  font-family:"icon-collections" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-reva:before { content: "\e642"; }
+.icon-find:before { content: "\e640"; }
+.icon-nextPage:before { content: "\e63f"; }
+.icon-prePage:before { content: "\e63e"; }
+.icon-clock-on:before { content: "\e633"; }
+.icon-clock-off:before { content: "\e632"; }
+.icon-trend:before { content: "\e630"; }
+.icon-cake:before { content: "\e62f"; }
+.icon-logout:before { content: "\e600"; }
+.icon-adminedit:before { content: "\e602"; }
+.icon-line:before { content: "\e603"; }
+.icon-position:before { content: "\e604"; }
+.icon-more:before { content: "\e62c"; }*/
+/*icons end*/
+
+@font-face {font-family: "icon-collections";
+  src: url('../font/icon.eot?t=1465693728');
+  src: url('../font/icon.eot?t=1465693728#iefix') format('embedded-opentype'),
+  url('../font/icon.woff?t=1465693728') format('woff'),
+  url('../font/icon.ttf?t=1465693728') format('truetype'),
+  url('../font/icon.svg?t=1465693728#iconfont') format('svg');
+}
+
+.icon-collections {
+  font-family:"icon-collections" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-mailbox:before { content: "\e644"; }
+.icon-reva:before { content: "\e642"; }
+.icon-find:before { content: "\e640"; }
+.icon-nextPage:before { content: "\e63f"; }
+.icon-prePage:before { content: "\e63e"; }
+.icon-clock_on:before { content: "\e633"; }
+.icon-clock_off:before { content: "\e632"; }
+.icon-trend:before { content: "\e630"; }
+.icon-cake:before { content: "\e62f"; }
+.icon-more:before { content: "\e62c"; }
+.icon-position:before { content: "\e604"; }
+.icon-line:before { content: "\e603"; }
+.icon-adminedit:before { content: "\e602"; }
+.icon-logout:before { content: "\e600"; }
+

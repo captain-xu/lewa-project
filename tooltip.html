@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tooltip</title>
+	<link rel="stylesheet" href="css/plugin.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/plugin.js"></script>
+</head>
+<body>
+
+	<li class="teal" data-content="Clicked"></li>
+
+	<script>
+
+			$('.teal')
+			  .popup({
+			    on: 'hover',
+			    position : 'bottom left',
+			  });
+
+
+	</script>
+</body>
+</html>

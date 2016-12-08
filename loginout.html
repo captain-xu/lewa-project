@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>跳转页面</title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+<script language="javascript">
+
+        $(document).ready(function() {
+            function jump(count) {
+                window.setTimeout(function(){
+                    count--;
+                    if(count > 0) {
+                        $('#num').html(count);
+                        jump(count);
+                    } else {
+                        location.href="http://jbxue.com";
+                    }
+                }, 1000);
+            }
+            jump(10000);
+             var startTime = (new Date).getTime(),  //进入页面时间
+                interval = 0,  //进入页面到现在间隔了多少秒
+                clock;
+
+            //每500毫秒计算一次
+            clock = setInterval(function () {
+                interval = Math.ceil(((new Date).getTime() - startTime) / 1000);
+                if (interval > 10 * 1) {
+                    clearInterval(clock);
+                }
+            }, 1000);
+        });
+        $(document).ready(function () {
+
+          });
+</script>
+  </head>
+  <body>
+    <span id="num">5</span>
+
+  </body>
+</html>

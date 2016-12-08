@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>503</title>
+  <link rel="stylesheet" href="css/404.css">
+  <link rel="stylesheet"  href="css/loginstyle.css">
+  <link rel="stylesheet"  href="css/reset.css">
+  <link rel="stylesheet"  href="css/font.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="wrapper pos-relative" id="first-part-wrapper">
+    <div class="content pos-relative align-center p-t-140 p-b-140" id="top">
+        <div class="hideMe particles pos-absolute t-1p l-1p width-98 height-98 in" data-dur=".5" id="particles-top" style="transition-duration: 0.5s;"><canvas class="particles-js-canvas-el" width="1254" height="768" style="width: 100%; height: 100%;"></canvas>
+        </div>
+  </div>
+</div>
+  <div class="container-505">
+      <div class="logo icon-collections">
+          <span class="icon-reva"></span>
+      </div>
+      <div class="content-505">
+        <div class="coming"><p>We'll be back soon!</p></div>
+        <div class="deta">
+          <ul>
+            <li><span id="hour">24</span></li>
+            <li><span id="min">00</span></li>
+            <li class="mins"><span id="second">00</span></li>
+          </ul>
+        </div>
+        <script type="text/javascript">
+      var intDiff = parseInt(24*60*60 - 1);//倒计时总秒数量
+      function timer(intDiff){
+          window.setInterval(function(){
+          var hour=24,
+              minute=00,
+              second=00;//时间默认值
+          if(intDiff > 0){
+              hour = Math.floor(intDiff / (60 * 60));
+              minute = Math.floor(intDiff / 60) - (hour * 60);
+              second = Math.floor(intDiff) - (hour * 60 * 60) - (minute * 60);
+          }
+          if (minute <= 9) minute = '0' + minute;
+          if (second <= 9) second = '0' + second;
+          $('#hour').html('<s id="h"></s>'+hour);
+          $('#min').html('<s></s>'+minute);
+          $('#second').html('<s></s>'+second);
+          intDiff--;
+          }, 1000);
+      }
+      $(function(){
+          timer(intDiff);
+      });
+    </script>
+        <div class="time">
+          <ul>
+            <li>DAYS</li>
+            <li>HOURS</li>
+            <li class="mins">MINS</li>
+          </ul>
+        </div>
+        <div class="mail">
+            <a href="#" class="icon-collections icon-mailbox icon-mail"></a>
+        </div>
+
+      </div>
+  </div>
+    <div class="footer">
+      <p>REWA Copyright &#169; 2016 All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

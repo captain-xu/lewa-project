@@ -1,0 +1,250 @@
+.btn-group {
+  width: 100%;
+  display:inline-block;
+  font-size: 0;
+  text-align:center;
+}
+.btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #C9C9C9;
+  width: 165px;height: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn:hover{
+  background:#C5C5C5;
+  color:#fff;
+}
+
+.btn:first-child {border-radius: 4px 0 0 4px;}
+.btn.btn-middle {border-radius: 0; border-width: 1px 0;}
+.btn:last-child {border-radius: 0 4px 4px 0;}
+.btn.actived, .btn.actived:visited {background: #4896F1;border-color: #4896F1;color: #fff;}
+.btn.actived:hover {color: #fff;}
+
+.direct .embed{
+  width: 36px;height: 30px;
+  background: #fff;
+  float: right;
+  cursor: pointer;
+  font-size: 0;
+
+}
+.direct .embed:hover{
+  background:#C5C5C5;
+}
+.direct .embed:hover .icon-link{color:#fff;}
+.list_active{
+  background: #4896F1 !important;
+}
+.embed-box{width: auto;float: right;padding-right: 3px;}
+.embed-box li:first-child {border-right:1px solid #C9C9C9;border-radius: 0 4px 4px 0;}
+.embed-box li {border:solid #C9C9C9;border-width: 1px 0;}
+.embed-box li:last-child {border-left:1px solid #C9C9C9;border-radius: 4px 0 0 4px;}
+.embed-box .icon-link {display: block; width: 34px; text-align: center; line-height: 30px;color: #5E5E5E;}
+
+.embed-box .icon-trend {font-size: 12px;}
+
+.embed-box li.list_active {border-color: #4896F1;}
+.list_active .icon-link {color: #fff;}
+
+.menu .icon-link {color: #6D6D6D; padding-right: 15px;}
+
+.items .icon-link{color: #fff; display:block;font-size: 8px;padding-right: 16px;float: right;}
+.check{
+  width: 100%;
+  padding-bottom: 72px;
+  background: #fff;
+}
+.check .check-box{
+  width: 146px;
+  height: 30px;
+  float: right;
+}
+.check .check-box input{
+  border:1px solid #C9C9C9;
+  width: 100%;
+  height: 28px;
+}
+.change-date ul li{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.change-date-type ul{
+  float: right;
+  font-size: 0;
+}
+.change-date-type ul li{
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #898989;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border:solid #c9c9c9;
+  border-width:1px 0;
+}
+.change-date-type ul li:hover{
+  background:#C5C5C5;
+  color:#fff;
+}
+.change-date-type ul li:first-child{border-radius: 3px 0 0 3px;border-left:1px solid #c9c9c9;}
+.change-date-type ul li:last-child{border-radius: 0 3px 3px 0;margin-right: 0;border-right:1px solid #c9c9c9;}
+.change-date-type ul li.date-active{color: #fff;background: #4896F1;border-color:#4896F1;}
+
+.pagination-wrapper{  width: 100%;height: 36px;padding: 22px 0;  background: #fff;}
+ .pagination{
+  width: auto;
+  font-size: 0;
+  float: left;
+}
+.pagination-number {
+  display: inline-block;
+  width: 36px;
+  padding: 5px 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #C9C9C9;
+}
+
+.pagination-number:first-child {border-radius: 4px 0 0 4px;}
+.pagination-number.btn-middle {border-radius: 0; border-width: 1px 0;}
+.pagination-number:last-child {border-radius: 0 4px 4px 0;}
+.pagination-number.pagination-actived, .pagination-number.pagination-actived:visited {background: #8C8C8C;border-color: #8C8C8C;color: #fff;}
+.pagination-number.pagination-actived:hover {color: #fff;}
+
+
+.pageturn{
+  width: auto;
+  height:32px;
+  float: right;
+  background: rgba(229, 229, 229, 0.5);
+  padding: 2px;
+  border-radius: 3px;
+}
+.pageturn span{
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  color: #2C3239;
+  display: inline-block;
+  vertical-align:top;
+}
+.pageturn a{display: inline-block;width: 30px;height: 30px;background: #fff;border-radius: 3px; border: 1px solid #E5E5E5;}
+.pageturn .page-arrow{font-size: 32px;color: #4896F1;}
+.pageturn .pageturn-mid{
+  width: 40px;
+  height: 28px;
+  background: #E5E5E5;
+}
+.change-date .check-box{
+  float: right;
+  width: 146px;
+  height: 30px;
+  float: right;
+  padding-bottom: 5px;
+}
+
+.change-date .check-box input{
+  border:1px solid #C9C9C9;
+  width: 100%;
+  height: 28px;
+}
+/*下拉复选框*/
+.compare-contain{
+  display:none;
+}
+.data-list {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    float: right;
+    margin-bottom: 15px;
+    position: relative;
+        z-index: 2;
+}
+.hidden {display:none;}
+
+.data-list input[type="text"] {
+    width: 174px;
+    border: 1px solid #C9C9C9;
+    border-radius:3px;
+    outline: 0px;
+    line-height: 28px;
+    padding: 0px;
+    margin: 0px;
+    padding: 0 12px;
+    font-size: 14px;
+    background: #fff url(../images/icon_down.png) no-repeat right center;
+}
+.data-list .wrapper{background: #fff;border: 1px solid #c9c9c9;border-top: none;border-radius:3px;}
+.data-list .content {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+
+.data-list ul li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.data-list ul li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #4896F1;
+    cursor: pointer;
+}
+
+.data-list ul button{
+    display: block;
+    width: 60px;
+    height: 25px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 8px;
+    margin-top: 3px;
+    border-radius: 6px;
+    background: #4896F1;
+    display: inline-block;
+}
+.data-list ul li span {
+    line-height: 30px;
+    vertical-align: middle;
+}
+.data-list ul li:hover{
+    background: #ECECEC;
+}
+.data-list .bottom {width: auto;height: 30px;line-height: 30px;padding: 0 10px;}
+.data-list .bottom span {float: left;}
+.data-list .bottom a {float: right;color:#000;}
+
+/*下拉复选框结束*/

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/widgetstyle.css">
+  <link rel="stylesheet"  href="css/font.css">
+  <link rel="stylesheet" href="css/dateRange.css" />
+  <link rel="stylesheet" href="css/plugin.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dateRange.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo icon-collections">
+      <span class="icon-reva"></span>
+    </div>
+    <div class="right-content">
+      <div class="nav">
+        <ul>
+          <li class="active"><a href="#" title="Report">REPORT</a></li>
+          <li><a href="#" title="Campaign">CAMPAIGN</a></li>
+          <li><a href="#" title="OS DIY">OS DIY</a></li>
+        </ul>
+      </div>
+      <div class="admin-container">
+        <div class="admin teal" data-content="Profile and settings">
+          <a href="#" id="leftUserName">admin <span class="square"></span></a>
+        </div>
+        <div class="menu hide">
+          <p onclick=" Gohref('report/ChangePassword.jsp');"><a href="#" class="icon-collections icon-adminedit icon-link"></a>Change
+            Password</p>
+          <p onclick="logout();"><a href="#" class="icon-collections icon-logout icon-link"></a>Logout</p>
+        </div>
+      </div>
+      <!-- <div class="clock">
+        <a href="#" class="icon-collections icon-clock-off icon-link" title="clock-off"></a>
+      </div> -->
+    </div>
+  </header>
+  <aside class="aside clear">
+    <div class="items">
+
+      <div class="os profiles-active">
+        <span>General Setting</span>
+      </div>
+
+      <div class="all">
+        <span>Mail template Settings</span>
+      </div>
+
+      <div class="new">
+        <span>App Monitor<a href="#" class="icon-collections icon-more icon-link" ></a></span>
+        <ul class="list hide">
+          <li>Overview</li>
+          <li>Notification</li>
+          <li>Data</li>
+          <li>Background app</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </aside>
+<!-- 以上为框架部分 -->
+<!-- 以下为图表内容部分 -->
+  <section class="section">
+    <div class="head-nav">
+      <span class="head-title">My Profile</span>
+      <div class="head-sel">
+        <span>Device</span>
+        <select class="ui search dropdown">
+          <option value="">All</option>
+          <option value="I111">I111</option>
+          <option value="I123">I123</option>
+          <option value="I791">I791</option>
+          <option value="I852">I852</option>
+          <option value="I999">I999</option>
+          <option value="K350">K350</option>
+          <option value="K360">K360</option>
+          <option value="K370">K370</option>
+          <option value="K530">K530</option>
+          <option value="K745">K745</option>
+          <option value="TITANIUM S205 2GB">TITANIUM S205 2GB</option>
+        </select>
+      </div>
+      <div class="head-sel">
+        <span>App</span>
+        <select class="ui search dropdown">
+          <option value="">acr.browser.lightning</option>
+          <option>co.uk.create.solutions.printtextmessages</option>
+          <option>com.azya.garmin.watchdialer</option>
+          <option>com.bettertomorrowapps.spyyourlove</option>
+          <option>com.bitdeck.emailtextmessages</option>
+          <option>com.bria.voip</option>
+          <option>com.ellevsoft.unreadgmailbadge</option>
+          <option>com.flickey.FlickKeyWearApp</option>
+          <option>com.gmail.mjm4456.vpncilla</option>
+          <option>com.goticapp.sw2face</option>
+          <option>com.idisplay.virtualscreen</option>
+          <option>com.jamworks.quickreply.pro</option>
+          <option>com.lbe.security</option>
+          <option>com.lewa.PIM</option>
+          <option>com.maildroid.pro</option>
+          <option>com.majedev.superbeampro</option>
+          <option>com.modoohut.dialer.donate</option>
+          <option>com.morlunk.mumbleclient</option>
+          <option>com.MSMSP</option>
+          <option>com.Paradox</option>
+          <option>com.qihoo360.mobilesafe</option>
+          <option>com.qihoo.appstore</option>
+          <option>com.tmnlab.autosms</option>
+          <option>de.shapeservices.implusfull</option>
+          <option>dk.tacit.android.foldersync.full</option>
+          <option>ekawas.blogspot.com</option>
+          <option>it.colucciweb.openvpn</option>
+          <option>net.snclab.wifitetherrouter</option>
+          <option>polis.app.callrecorder.pro</option>
+        </select>
+      </div>
+     <!--  <span class="nav-title">Text</span>
+      <div class='select-bac bac1'>
+        <input type="text" placeholder="Karbon" readonly="readonly">
+        <i class="sel_orderd"></i>
+        <ul class="select-box hide box1">
+          <li>Karbon</li>
+          <li>Lewa</li>
+          <li>Text</li>
+        </ul>
+      </div>
+      <span class="nav-title">Text</span>
+      <div class='select-bac bac2'>
+        <input type="text" placeholder="Karbon" readonly="readonly">
+        <i class="sel_orderd"></i>
+        <ul class="select-box hide box2">
+          <li>Karbon</li>
+          <li>Lewa</li>
+          <li>Text</li>
+        </ul>
+      </div> -->
+      <div class="datarange">
+          <div class="wrapper">
+              <div class="ta_date" id="div_date1">
+                  <p>
+                    <span id="date1"></span>
+                    <span class="date_title" id="date_con"></span>
+                    <a class="opt_sel" id="input_trigger1" href="#">
+                        <i class="i_orderd"></i>
+                    </a>
+                  </p>
+                  <ul class="custom_range">
+                      <li id='aRecent7Days'>Last 7 Days</li>
+                      <li id='aRecent30Days'>Last 30 Days</li>
+                      <li id='aRecent60Days'>Last 60 Days</li>
+                      <li id='custom_range'>Custom Range</li>
+                  </ul>
+              </div>
+            </div>
+      </div>
+    </div><!-- 内容部分头部 -->
+    <div class="tableur">
+      <div class="data_trend">
+        <div class="direct">
+          <h3>Background Running</h3>
+        </div>
+        <div class="map"></div>
+      </div>
+   </div>
+   <!-- <div class="footer clear">
+      <a href="javascript:void(0)" class="link">About LeWa</a>
+      <p>LEWA Copyright &#169; 2016 All Rights Reserved</p>
+    </div> -->
+  </section>
+  <script>
+
+    $('.ui.search.dropdown')
+      .dropdown({
+      });
+  $('.teal').popup({on: 'hover',position : 'bottom left'});
+
+
+  </script>
+
+</body>
+
+</html>

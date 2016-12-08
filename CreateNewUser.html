@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create NewUser</title>
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/widgetstyle.css">
+  <link rel="stylesheet"  href="css/font.css">
+  <link rel="stylesheet" href="css/user-setting.css">
+  <link rel="stylesheet" href="css/plugin.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/plugin.js"></script>
+	<script src="js/layout.js"></script>
+</head>
+<body>
+	<header class="header">
+    <div class="logo icon-collections">
+      <span class="icon-reva"></span>
+    </div>
+    <div class="right-content">
+      <div class="nav">
+        <ul>
+          <li class="active"><a href="#" title="Report">REPORT</a></li>
+          <li><a href="#" title="Campaign">CAMPAIGN</a></li>
+          <li><a href="#" title="OS DIY">OS DIY</a></li>
+        </ul>
+      </div>
+      <div class="admin-container">
+        <div class="admin">
+          <a href="#" id="leftUserName">admin <span class="square"></span></a>
+        </div>
+        <div class="menu hide">
+          <p onclick=" Gohref('report/ChangePassword.jsp');"><a href="#" class="icon-collections icon-adminedit icon-link"></a>Change
+            Password</p>
+          <p onclick="logout();"><a href="#" class="icon-collections icon-logout icon-link"></a>Logout</p>
+        </div>
+      </div>
+      <!-- <div class="clock">
+        <a href="#" class="icon-collections icon-clock-off icon-link" title="clock-off"></a>
+      </div> -->
+    </div>
+  </header>
+	<aside class="aside clear">
+		<div class="items">
+			<ul>
+				<li>Text</li>
+				<li>Text</li>
+		</div>
+	</aside>
+<!-- 以上为框架部分 -->
+<!-- 以下为图表内容部分 -->
+	<section class="section">
+		<div class=rinasky>
+  <section class="section">
+    <div class="head-nav">
+      <span class="head-title"></span>
+    </div>
+    <!-- 内容部分头部 -->
+    <div class="section-container">
+      <form id="typeForm" action="manage/1003" method="post">
+        <div class="section-contant">
+          <ul>
+            <li><span>Email:</span><input type="text"
+              placeholder="admin@lewatek.com" id="email" name="email"></li>
+            <li><span>Actual Name:</span><input type="text"
+              placeholder="Super Administrator" id="name" name="name"></li>
+            <li><span>Password:</span><input type="password"
+              placeholder="Super Administrator" id="password" name="password"></li>
+            <li><span>Repeat it:</span><input type="password"
+              placeholder="Super Administrator" id="repassword" name="repassword"></li>
+            <li class="role-check"><span>Role:</span>
+            <div class="role-radio">
+              <span class="role-radio">Admin
+                </span><span class="role-radio">LeWaUser
+                </span>
+                <span class="role-radio">Project Manager
+                </span>
+            </div></li>
+            <li class="role-check">
+              <dl class="clearfix">
+                <dd>
+                  <span>Language:</span>
+                  <div id="type" name="language" class="ui selection dropdown">
+                    <input type="hidden" name="country">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Select language</div>
+                    <div class="menu">
+                      <div class="item" data-value="cn"><i class="cn flag"></i>简体中文 - Simplified Chinese</div>
+                      <div class="item" data-value="gb"><i class="gb flag"></i>English</div>
+                    </div>
+                  </div>
+                </dd>
+                <dd>
+                  <span>Timezone:</span>
+                  <select class="ui search dropdown sel-last"  id="type" name="timezone">
+                    <option>(UTC-06:00)Mountain Time(US&Canada)</option>
+                  </select>
+                </dd>
+              </dl>
+            </li>
+            <li class="role-check" id="group" name="group"><span>Group:</span>
+              <div class="role-radio">
+                <span class="role-radio">LeWa
+                  </span><span class="role-radio">Karbonn
+                  </span>
+                  <span class="role-radio">Intex
+                  </span>
+              </div></li>
+            <li class="role-check">
+              <dl class="clearfix">
+                <dd>
+                  <span>Status:</span>
+                  <select class="ui search dropdown">
+                    <option>ON</option>
+                    <option>OFF</option>
+                  </select>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="sec-btn">
+          <button>Cancel</button>
+          <button>Text</button>
+          <button>Save</button>
+        </div>
+      </form>
+    </div>
+    <!-- <div class="footer clear">
+      <a href="javascript:void(0)" class="link">About LeWa</a>
+      <p>LEWA Copyright &#169; 2016 All Rights Reserved</p>
+    </div> -->
+	</section>
+  <script>
+
+  $('.ui.dropdown')
+  .dropdown({
+  });
+  </script>
+</body>
+
+</html>

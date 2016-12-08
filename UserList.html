@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User List</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/widgetstyle.css">
+  <link rel="stylesheet" href="css/user-setting.css">
+  <link rel="stylesheet"  href="css/font.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/layout.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo icon-collections">
+      <span class="icon-reva"></span>
+    </div>
+    <div class="right-content">
+      <div class="nav">
+        <ul>
+          <li class="active"><a href="#" title="Report">REPORT</a></li>
+          <li><a href="#" title="Campaign">CAMPAIGN</a></li>
+          <li><a href="#" title="OS DIY">OS DIY</a></li>
+        </ul>
+      </div>
+      <div class="admin-container">
+        <div class="admin">
+          <a href="#" id="leftUserName">admin <span class="square"></span></a>
+        </div>
+        <div class="menu hide">
+          <p onclick=" Gohref('report/ChangePassword.jsp');"><a href="#" class="icon-collections icon-adminedit icon-link"></a>Change
+            Password</p>
+          <p onclick="logout();"><a href="#" class="icon-collections icon-logout icon-link"></a>Logout</p>
+        </div>
+      </div>
+      <!-- <div class="clock">
+        <a href="#" class="icon-collections icon-clock-off icon-link" title="clock-off"></a>
+      </div> -->
+    </div>
+  </header>
+  <aside class="aside clear">
+    <div class="items">
+      <ul>
+        <li>用户</li>
+        <li>Text</li>
+    </div>
+  </aside>
+<!-- 以上为框架部分 -->
+<!-- 以下为图表内容部分 -->
+  <section class="section">
+   <div class="rinasky">
+  <div class="head-nav">
+    <span class="head-title"></span>
+  </div>
+  <div class="section-container">
+    <div class="data_trend">
+
+      <div class="table-container">
+        <table class="table">
+          <tr>
+            <th>RealName</th>
+            <th>UserName</th>
+            <th>Role</th>
+            <th>CreateTime</th>
+            <th>Operation</th>
+          </tr>
+          <tbody id="tableList">
+            <tr id="thefirsttr" style="display:none">
+              <td>Name@lewatek.com</td>
+              <td>50</td>
+              <td>322</td>
+              <td>2015-5-25 00:00</td>
+              <td><a href="#">Enable</a> &#124; <a href="#">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <!--
+      <div class="pagination-wrapper">
+        <div class="pageturn">
+          <a href="#" class="icon-collections icon-prePage page-arrow"
+            title="previous page" ></a> <span id="currentpage">1</span><span>/</span><span id="allpage">10</span> <a href="#"
+            class="icon-collections icon-nextPage page-arrow"
+            title="next page"></a>
+        </div>
+      </div>
+     -->
+    </div>
+  </div>
+</div>
+   <!-- <div class="footer clear">
+      <a href="javascript:void(0)" class="link">About LeWa</a>
+      <p>LEWA Copyright &#169; 2016 All Rights Reserved</p>
+    </div> -->
+  </section>
+
+</body>
+
+</html>
